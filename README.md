@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -5,13 +6,14 @@
 html, body {
   margin: 0;
   padding: 0;
-  background: transparant;
+  background: transparent;
   height: 100%;
+  overflow: hidden;
 }
 video {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 </style>
 </head>
