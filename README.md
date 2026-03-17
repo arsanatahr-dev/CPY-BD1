@@ -7,19 +7,29 @@ html, body {
   margin: 0;
   padding: 0;
   background: transparent;
-  height: 100%;
-  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.video-container {
+  width: 100%;
+  max-width: 480px; /* ini bikin kecil di HP */
+  aspect-ratio: 16/9;
+  background: black;
 }
 video {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 </style>
 </head>
 <body>
 
-<video id="video" autoplay muted playsinline></video>
+<div class="video-container">
+  <video id="video" autoplay muted playsinline></video>
+</div>
 
 <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
 <script>
